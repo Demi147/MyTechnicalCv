@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22c450036bdc63296f9e6934be9857ad",
+    "revision": "d89d4a032fc33cce4d8cffd2b1c0f4f2",
     "url": "/MyTechnicalCv/index.html"
   },
   {
-    "revision": "a9215db0173ceb826865",
-    "url": "/MyTechnicalCv/static/css/main.3fd71047.chunk.css"
+    "revision": "9f22958979eb6121cdc3",
+    "url": "/MyTechnicalCv/static/css/main.47534245.chunk.css"
   },
   {
     "revision": "96edac6b4d01bdef9e20",
@@ -16,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyTechnicalCv/static/js/2.cb62f910.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9215db0173ceb826865",
-    "url": "/MyTechnicalCv/static/js/main.18dfa9cd.chunk.js"
+    "revision": "9f22958979eb6121cdc3",
+    "url": "/MyTechnicalCv/static/js/main.c2c54c43.chunk.js"
   },
   {
     "revision": "6e96342efa107444f4c7",
     "url": "/MyTechnicalCv/static/js/runtime-main.3334bf8c.js"
+  },
+  {
+    "revision": "a1ce555c7fac205e829b2c7d718b1403",
+    "url": "/MyTechnicalCv/static/media/Background.a1ce555c.jpg"
   }
 ]);
