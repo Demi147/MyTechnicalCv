@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NewsItem from "./newsItem";
+import Loader from "./loader";
 
 class News extends Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class News extends Component {
     var { isLoaded, items } = this.state;
 
     if (!isLoaded) {
-      return <div>Loading News</div>;
+      return <Loader></Loader>;
     } else {
       return (
         <div className="News">

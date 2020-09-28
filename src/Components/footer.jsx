@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import Social from "./socialMedia";
+import ContactMe from "./contactMe";
 
 export class Footer extends Component {
   render() {
-    return <div>This is the footer Kinda</div>;
+    return (
+      <div className="BottomBar container">
+        <Social></Social>
+        <ContactMe></ContactMe>
+      </div>
+    );
   }
 }
 

@@ -4,7 +4,7 @@ import News from "./news";
 class SideBar extends Component {
   render() {
     return (
-      <div className="flexbox-container flexbox-column side-bar">
+      <div className="container flexbox-container flexbox-column side-bar">
         <h3>News</h3>
         <News></News>
         <hr></hr>
