@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NewsItem from "./newsItem";
-import Loader from "./loader";
+import Loader from "../Util/loader";
 
 class News extends Component {
   constructor(props) {
@@ -52,7 +52,8 @@ class News extends Component {
       return <Loader></Loader>;
     } else {
       return (
-        <div className="News">
+        <div className="News flexbox-container flexbox-column">
+          <h3>News</h3>
           {items.map((item) => (
             <NewsItem
               key={item.appid}

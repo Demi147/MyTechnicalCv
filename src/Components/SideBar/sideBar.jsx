@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import News from "./news";
+import Github from "./github";
+import CoolLinks from "./someCoolLinks";
 
 class SideBar extends Component {
   render() {
     return (
       <div className="container flexbox-container flexbox-column side-bar">
-        <h3>News</h3>
         <News></News>
         <hr></hr>
-        maby github here?
+        <Github></Github>
         <hr></hr>
-        Some cool links here?
+        <CoolLinks></CoolLinks>
         <hr></hr>
         Nothing here?
       </div>

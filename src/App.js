@@ -1,8 +1,8 @@
 import React from "react";
-import MainBar from "./Components/mainBar";
-import NavBar from "./Components/navBar";
-import SideBar from "./Components/sideBar";
-import Footer from "./Components/footer";
+import MainBar from "./Components/MainBar/mainBar";
+import NavBar from "./Components//Util/navBar";
+import SideBar from "./Components/SideBar/sideBar";
+import Footer from "./Components/Footer/footer";
 import "./style.css";
 
 function App() {

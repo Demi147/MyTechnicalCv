@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AboutMe from "./aboutMe";
 import Skills from "./skills";
-import Loader from "./loader";
+import Loader from "../Util/loader";
 
 class MainBar extends Component {
   render() {
