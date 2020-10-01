@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import News from "./news";
 import Github from "./github";
 import CoolLinks from "./someCoolLinks";
+import Catapi from "./catFactspia";
 
 class SideBar extends Component {
   render() {
@@ -10,6 +11,8 @@ class SideBar extends Component {
         <News></News>
         <hr></hr>
         <Github></Github>
+        <hr></hr>
+        <Catapi></Catapi>
         <hr></hr>
         <CoolLinks></CoolLinks>
         <hr></hr>

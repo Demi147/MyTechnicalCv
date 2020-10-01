@@ -1,69 +1,44 @@
 import React, { Component } from "react";
 import NewsItem from "./newsItem";
-import Loader from "../Util/loader";
 
 class News extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: [],
-      isLoaded: false,
-    };
-  }
-
-  componentDidMount() {
-    let x = [];
-
-    fetch(
-      "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=359550&count=1&maxlength=300&format=json"
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        x.push(json.appnews.newsitems[0]);
-      });
-
-    fetch(
-      "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=552990&count=1&maxlength=300&format=json"
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        x.push(json.appnews.newsitems[0]);
-      });
-
-    fetch(
-      "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=230410&count=1&maxlength=300&format=json"
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        x.push(json.appnews.newsitems[0]);
-        this.setState({
-          isLoaded: true,
-          items: x,
-        });
-      });
-
-    console.log(x);
-  }
+  componentDidMount() {}
 
   render() {
-    var { isLoaded, items } = this.state;
+    let dataArray = [
+      [
+        "Warframe",
+        "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=230410&count=1&maxlength=300&format=json",
+      ],
+      [
+        "World Of Warships",
+        "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=552990&count=1&maxlength=300&format=json",
+      ],
+      [
+        "Rainbow 6 Seige",
+        "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=359550&count=1&maxlength=300&format=json",
+      ],
+    ];
 
-    if (!isLoaded) {
-      return <Loader></Loader>;
-    } else {
-      return (
-        <div className="News flexbox-container flexbox-column">
-          <h3>News</h3>
-          {items.map((item) => (
-            <NewsItem
-              key={item.appid}
-              title={item.title}
-              link={item.url}
-            ></NewsItem>
-          ))}
-        </div>
+    let x = [];
+
+    var i;
+    for (i = 0; i < dataArray.length; i++) {
+      x.push(
+        <NewsItem
+          key={dataArray[i][0]}
+          appName={dataArray[i][0]}
+          link={dataArray[i][1]}
+        ></NewsItem>
       );
     }
+
+    return (
+      <div className="News flexbox-container flexbox-column">
+        <h3>News</h3>
+        {x}
+      </div>
+    );
   }
 }
 

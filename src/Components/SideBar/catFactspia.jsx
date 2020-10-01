@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Loader from "../Util/loader";
 
-export class github extends Component {
+export class catFactspia extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,33 +10,25 @@ export class github extends Component {
   }
 
   componentDidMount() {
-    const url =
-      "https://api.github.com/search/repositories?q=user:Demi147&sort=updated";
+    const url = "https://cat-fact.herokuapp.com/facts/random";
 
     fetch(url)
       .then((res) => res.json())
       .then((json) => {
-        //code here
-        json.items.length = 4;
         this.setState({
-          data: json.items,
+          data: json.text,
           isLoaded: true,
         });
       });
   }
 
   render() {
-    var { data, isLoaded } = this.state;
-
+    var { isLoaded, data } = this.state;
     if (isLoaded) {
       return (
         <div className="News flexbox-container flexbox-column">
-          <h3>Github links</h3>
-          {data.map((item) => (
-            <a key={item.id} href={item.html_url}>
-              {item.name}
-            </a>
-          ))}
+          <h3>Random cat fact</h3>
+          <p>{data}</p>
         </div>
       );
     } else {
@@ -45,4 +37,4 @@ export class github extends Component {
   }
 }
 
-export default github;
+export default catFactspia;

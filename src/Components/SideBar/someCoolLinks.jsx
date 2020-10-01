@@ -5,7 +5,12 @@ export class someCoolLinks extends Component {
     return (
       <div className="News flexbox-container flexbox-column">
         <h3>Some cool links</h3>
-        <p>Some cool links of people or things i follow (not an api)</p>
+        <a href="https://demi147.github.io/PlatformerForMyWebsites/">
+          A WebGL game i made
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.DemiGodProductions.ShootTheZombies">
+          My android game project (Beta)
+        </a>
       </div>
     );
   }
