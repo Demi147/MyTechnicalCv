@@ -27,6 +27,42 @@
   grid-area: mainbar;
 }
 
+.aboutMe {
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: "text foto";
+  text-align: center;
+}
+
+.aboutText {
+  grid-area: text;
+}
+.aboutPhoto {
+  grid-area: foto;
+}
+.aboutMe img {
+  border-radius: 30%;
+  box-sizing: border-box;
+  border: solid #0c0032 3px;
+  width: 100%;
+  align-content: flex-end;
+}
+
+.skills {
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "expertSkills rookieSkills";
+}
+
+.expertSkills {
+  grid-area: expertSkills;
+}
+.rookieSkills {
+  grid-area: rookieSkills;
+}
+
 /*#endregion*/
 
 /*#region Navbar*/
@@ -123,23 +159,22 @@ hr {
 /*#region Contact me form*/
 
 .contact-form {
-  width: 50rem;
+  width: 80%;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 60%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #3500d3; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #3500d3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type="submit"] {
   background-color: #3500d3;
   color: white;
@@ -154,10 +189,6 @@ input[type="submit"]:hover {
   background-color: #190061;
 }
 /*#endregion*/
-
-.skills ul {
-  list-style: inside;
-}
 
 /*#region Loader*/
 .loader {
@@ -176,6 +207,29 @@ input[type="submit"]:hover {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/*#endregion*/
+
+/*#region Mobile*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  * {
+    margin: 0;
+  }
+
+  .main {
+    display: inline;
+  }
+
+  .BottomBar {
+    display: inline;
+  }
+  .skills {
+    display: inline;
+  }
+  .aboutMe {
+    display: inline;
   }
 }
 /*#endregion*/

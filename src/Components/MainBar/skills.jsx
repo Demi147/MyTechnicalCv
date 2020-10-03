@@ -5,8 +5,8 @@ export default class Skills extends Component {
     return (
       <div>
         <h2>Technical skills</h2>
-        <div>
-          <div className="skills">
+        <div className="skills">
+          <div className="expertSkills">
             <h4>Things i work with every day. (Primary skills)</h4>
             <ul>
               <li>
@@ -28,6 +28,8 @@ export default class Skills extends Component {
                 </ul>
               </li>
             </ul>
+          </div>
+          <div className="rookieSkills">
             <h4>Things i have surface level knowladge of.</h4>
             <ul>
               <li>Blender</li>
