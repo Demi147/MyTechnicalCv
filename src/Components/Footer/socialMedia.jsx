@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGitSquare } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import { faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 
 export class socialMedia extends Component {
   render() {
@@ -24,6 +25,11 @@ export class socialMedia extends Component {
         <a href="https://www.instagram.com/carel_haasbroek/">
           <FontAwesomeIcon icon={faInstagramSquare} size="lg" />
           <span> Instagram</span>
+        </a>
+        <br></br>
+        <a href="https://www.youtube.com/channel/UCt2VF2PFve1cfD1UgrJ9oyQ">
+          <FontAwesomeIcon icon={faYoutubeSquare} size="lg" />
+          <span> Youtube</span>
         </a>
       </div>
     );

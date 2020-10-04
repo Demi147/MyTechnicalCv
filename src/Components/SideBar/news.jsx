@@ -34,7 +34,7 @@ class News extends Component {
     }
 
     return (
-      <div className="News flexbox-container flexbox-column">
+      <div id="news" className="News flexbox-container flexbox-column">
         <h3>News</h3>
         {x}
       </div>

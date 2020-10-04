@@ -11,6 +11,9 @@ export class someCoolLinks extends Component {
         <a href="https://play.google.com/store/apps/details?id=com.DemiGodProductions.ShootTheZombies">
           My android game project (Beta)
         </a>
+        <a href="https://dimensiondatacollab.azurewebsites.net/">
+          Dimention Data Colab Site
+        </a>
       </div>
     );
   }

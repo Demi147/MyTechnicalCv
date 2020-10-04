@@ -26,7 +26,10 @@ export default function ContactUs() {
   }
 
   return (
-    <div className="contact container flexbox-container flexbox-column">
+    <div
+      id="contact"
+      className="contact container flexbox-container flexbox-column"
+    >
       <h3>Contact Me</h3>
       <br></br>
 

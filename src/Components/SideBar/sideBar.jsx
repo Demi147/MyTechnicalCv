@@ -15,8 +15,6 @@ class SideBar extends Component {
         <Catapi></Catapi>
         <hr></hr>
         <CoolLinks></CoolLinks>
-        <hr></hr>
-        Nothing here?
       </div>
     );
   }

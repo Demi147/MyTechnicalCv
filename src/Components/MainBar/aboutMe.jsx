@@ -4,7 +4,7 @@ import Image from "../../img/Me.jpg";
 class AboutMe extends Component {
   render() {
     return (
-      <div className="flexbox-item flexbox-column">
+      <div id="about" className="flexbox-item flexbox-column">
         <div className="aboutMe">
           <div>
             <img src={Image} alt="A long drive"></img>
