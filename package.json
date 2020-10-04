@@ -15,7 +15,10 @@
     "emailjs-com": "^2.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-particles-js": "^3.3.0",
+    "react-scripts": "3.4.3",
+    "react-tsparticles": "^1.17.12",
+    "tsparticles": "^1.17.12"
   },
   "scripts": {
     "predeploy": "npm run build",
