@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CV from "../../Files/CAREl Haasbroek.pdf";
 
 export class someCoolLinks extends Component {
   render() {
@@ -14,6 +15,7 @@ export class someCoolLinks extends Component {
         <a href="https://dimensiondatacollab.azurewebsites.net/">
           Dimention Data Colab Site
         </a>
+        <a href={CV}>Download my CV</a>
       </div>
     );
   }
