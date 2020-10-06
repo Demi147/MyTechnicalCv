@@ -3,6 +3,7 @@ import News from "./news";
 import Github from "./github";
 import CoolLinks from "./someCoolLinks";
 import Catapi from "./catFactspia";
+import Youtube from "./youtube";
 
 class SideBar extends Component {
   render() {
@@ -11,6 +12,8 @@ class SideBar extends Component {
         <News></News>
         <hr></hr>
         <Github></Github>
+        <hr></hr>
+        <Youtube></Youtube>
         <hr></hr>
         <Catapi></Catapi>
         <hr></hr>
