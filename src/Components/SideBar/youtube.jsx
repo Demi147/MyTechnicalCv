@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Loader from "../Util/loader";
+import Config from "../../Config.json";
 
 export class youtube extends Component {
   constructor(props) {
@@ -11,7 +12,8 @@ export class youtube extends Component {
 
   componentDidMount() {
     const url =
-      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCt2VF2PFve1cfD1UgrJ9oyQ&maxResults=3&order=date&key=AIzaSyDUDEQVyofimeVjxvsIAV6-koFBP_F6I3c";
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCt2VF2PFve1cfD1UgrJ9oyQ&maxResults=3&order=date&key=" +
+      Config.ApiKeys.Youtube;
 
     fetch(url)
       .then((res) => res.json())
