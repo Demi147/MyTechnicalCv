@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CV from "../../Files/CAREl Haasbroek.pdf";
+import CV from "../../Files/Carel Haasbroek.pdf";
 
 export class someCoolLinks extends Component {
   render() {

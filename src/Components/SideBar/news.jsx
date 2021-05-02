@@ -8,15 +8,15 @@ class News extends Component {
     let dataArray = [
       [
         "Warframe",
-        "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=230410&count=1&maxlength=300&format=json",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=230410&count=1&maxlength=300&format=json",
       ],
       [
         "World Of Warships",
-        "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=552990&count=1&maxlength=300&format=json",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=552990&count=1&maxlength=300&format=json",
       ],
       [
         "Rainbow 6 Seige",
-        "https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=359550&count=1&maxlength=300&format=json",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=359550&count=1&maxlength=300&format=json",
       ],
     ];
 

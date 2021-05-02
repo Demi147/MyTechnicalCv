@@ -4,8 +4,10 @@ export default class Skills extends Component {
   render() {
     return (
       <div>
-        <h2>Technical skills</h2>
+        <br></br>
+        <br></br>
         <div className="skills">
+        <h2 className="skillTitle">Technical skills</h2>
           <div className="expertSkills">
             <h4>Things i work with every day. (Primary skills)</h4>
             <ul>
@@ -29,6 +31,7 @@ export default class Skills extends Component {
               </li>
             </ul>
           </div>
+          <br></br>
           <div className="rookieSkills">
             <h4>Things i have surface level knowladge of.</h4>
             <ul>

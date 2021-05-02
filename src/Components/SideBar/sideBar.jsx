@@ -9,8 +9,6 @@ class SideBar extends Component {
   render() {
     return (
       <div className="container flexbox-container flexbox-column side-bar">
-        <News></News>
-        <hr></hr>
         <Github></Github>
         <hr></hr>
         <Youtube></Youtube>

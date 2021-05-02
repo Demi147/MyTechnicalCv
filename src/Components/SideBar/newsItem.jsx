@@ -12,9 +12,22 @@ class NewsItem extends Component {
 
   componentDidMount() {
     let q = this.state.item.link;
+
+    var myHeaders = new Headers();
+
+    var myInit = {
+      method: "GET",
+      headers: myHeaders,
+      cache: "default",
+    };
+
+    var x = new Request(q, myInit);
+    fetch(x).then((res) => console.log(res));
+
     fetch(q)
       .then((res) => res.json())
       .then((json) => {
+        console.log(json);
         //code here
         this.setState({
           data: json.appnews.newsitems[0],

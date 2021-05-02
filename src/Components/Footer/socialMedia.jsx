@@ -11,20 +11,11 @@ export class socialMedia extends Component {
     return (
       <div className="social container flexbox-container flexbox-column">
         <h3>Social</h3>
-        <br></br>
-        <a href="https://www.facebook.com/carel.haasbroek.5">
-          <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
-          <span> Facebook</span>
-        </a>
+
         <br></br>
         <a href="https://github.com/demi147">
           <FontAwesomeIcon icon={faGitSquare} size="lg" />
           <span> GitHub</span>
-        </a>
-        <br></br>
-        <a href="https://www.instagram.com/carel_haasbroek/">
-          <FontAwesomeIcon icon={faInstagramSquare} size="lg" />
-          <span> Instagram</span>
         </a>
         <br></br>
         <a href="https://www.youtube.com/channel/UCt2VF2PFve1cfD1UgrJ9oyQ">
@@ -37,3 +28,18 @@ export class socialMedia extends Component {
 }
 
 export default socialMedia;
+
+/*
+<br></br>
+
+        <a href="https://www.facebook.com/carel.haasbroek.5">
+          <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
+          <span> Facebook</span>
+        </a>
+
+        <br></br>
+        <a href="https://www.instagram.com/carel_haasbroek/">
+          <FontAwesomeIcon icon={faInstagramSquare} size="lg" />
+          <span> Instagram</span>
+        </a>
+        */

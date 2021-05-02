@@ -7,7 +7,7 @@ class AboutMe extends Component {
       <div id="about" className="flexbox-item flexbox-column">
         <div className="aboutMe">
           <div>
-            <img src={Image} alt="A long drive"></img>
+            <img className="MyImage" src={Image} alt="A long drive"></img>
           </div>
           <div className="aboutText">
             <h3>About me</h3>
@@ -25,6 +25,7 @@ class AboutMe extends Component {
               One day I would like to add robotics to my hobbies just like I'm
               making games now.
             </p>
+            <br></br>
             <h4>Strengths</h4>
             <ul>
               <li>Can learn technologies and frameworks easily.</li>
@@ -37,6 +38,7 @@ class AboutMe extends Component {
                 as necessary.
               </li>
             </ul>
+            <br></br>
             <h4>Weaknesses</h4>
             <ul>
               <li>Gives up easily.</li>

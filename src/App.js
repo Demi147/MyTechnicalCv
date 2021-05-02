@@ -12,7 +12,7 @@ function App() {
       <Particles></Particles>
       <NavBar></NavBar>
 
-      <div className="main">
+      <div className="main content">
         <SideBar></SideBar>
         <MainBar></MainBar>
       </div>

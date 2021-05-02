@@ -30,8 +30,7 @@
 .aboutMe {
   grid-gap: 5px;
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-areas: "text foto";
+  grid-template-areas: "foto" "text";
   text-align: center;
 }
 
@@ -45,17 +44,18 @@
   border-radius: 30%;
   box-sizing: border-box;
   border: solid #0c0032 3px;
-  width: 100%;
   align-content: flex-end;
 }
 
 .skills {
+  text-align: center;
   grid-gap: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "expertSkills rookieSkills";
+  grid-template-areas: "title" "expertSkills" "rookieSkills";
 }
-
+.skillTitle {
+  grid-area: title;
+}
 .expertSkills {
   grid-area: expertSkills;
 }
@@ -66,7 +66,9 @@
 /*#endregion*/
 
 /*#region Navbar*/
-
+.navbar {
+  overflow: hidden;
+}
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -117,6 +119,10 @@ hr {
   border-top: 1px solid #0c0032;
   width: 80%;
 }
+
+.MyImage {
+  width: 30%;
+}
 /*#endregion*/
 
 /*#region News*/
@@ -159,6 +165,14 @@ hr {
 
 .contact {
   grid-area: contact;
+}
+.contact a {
+  color: rgb(223, 223, 223);
+  text-decoration: none;
+}
+.contact a:hover {
+  background-color: #0c0032;
+  color: rgb(223, 223, 223);
 }
 /*#endregion*/
 
@@ -239,3 +253,15 @@ input[type="submit"]:hover {
   }
 }
 /*#endregion*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
